@@ -30,32 +30,32 @@
         android:id="@+id/pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="30dp"
         android:src="@drawable/pause"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/previous"
         app:layout_constraintEnd_toStartOf="@+id/next"
-        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintHorizontal_bias="0.728"
         app:layout_constraintStart_toEndOf="@+id/previous"
-        app:layout_constraintTop_toTopOf="@+id/next"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/previous"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        android:src="@drawable/next" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 
     <ImageButton
         android:id="@+id/previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/previous"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
-       android:src="@drawable/previous" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

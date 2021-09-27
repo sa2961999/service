@@ -45,11 +45,11 @@ MyService mservice;
         mservice.pause();}
     } ServiceConnection connection=new ServiceConnection() {
         @Override
-        public void onServiceConnected(ComponentName name, IBinder service) {
+        public void onServiceConnected(ComponentName name, IBinder iBinder) {
           bounded=true;
-          MyService.initClass binder=( MyService.initClass) service;
+          MyService.initClass binder=( MyService.initClass)iBinder ;
           mservice=binder.getService();
-          mservice.play();
+//          mservice.play();
         }
 
         @Override
